@@ -22,7 +22,7 @@ public class EatChickenJob implements Job,Serializable {
 	 */
 	@Override
 	public void execute(JobExecutionContext arg0) throws JobExecutionException {
-		System.out.println("大吉大利、今晚吃鸡");
+		System.out.println("大吉大利*****今晚吃鸡");
 	}
 
 }

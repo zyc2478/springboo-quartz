@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <url>http://maven.apache.org</url>
-    <name>demo</name>
+    <name>sprinboo-quartz</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

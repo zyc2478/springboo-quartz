@@ -37,7 +37,7 @@ public class TaskRunner implements ApplicationRunner{
     		quartz.setJobName("test01");
     		quartz.setJobGroup("test");
     		quartz.setDescription("测试任务");
-    		quartz.setJobClassName("com.example.demo.job.EatChickenJob");
+    		quartz.setJobClassName("com.example.demo.job.TestJob");
     		quartz.setCronExpression("0/20 * * * * ?");
    	        Class cls = Class.forName(quartz.getJobClassName()) ;
    	        cls.newInstance();
@@ -55,7 +55,5 @@ public class TaskRunner implements ApplicationRunner{
    	        /**交由Scheduler安排触发*/
    	        scheduler.scheduleJob(job, trigger);
     	}
-
     }
-
 }
